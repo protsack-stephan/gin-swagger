@@ -62,6 +62,7 @@ func CustomWrapHandler(config *Config, h *webdav.Handler) gin.HandlerFunc {
 	return func(c *gin.Context) {
 
 		type swaggerUIBundle struct {
+			Title       string
 			URL         string
 			DeepLinking bool
 		}
@@ -92,6 +93,7 @@ func CustomWrapHandler(config *Config, h *webdav.Handler) gin.HandlerFunc {
 		switch path {
 		case "index.html":
 			index.Execute(c.Writer, &swaggerUIBundle{
+				Title:       config.Title,
 				URL:         config.URL,
 				DeepLinking: config.DeepLinking,
 			})
