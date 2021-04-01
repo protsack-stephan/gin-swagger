@@ -38,7 +38,7 @@ func DeepLinking(deepLinking bool) func(c *Config) {
 // WrapHandler wraps `http.Handler` into `gin.HandlerFunc`.
 func WrapHandler(h *webdav.Handler, confs ...func(c *Config)) gin.HandlerFunc {
 	defaultConfig := &Config{
-		Title:       "Swagger UI",
+		Title:       "Documentation",
 		URL:         "doc.json",
 		DeepLinking: true,
 	}
