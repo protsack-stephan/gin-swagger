@@ -2,12 +2,12 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/swaggo/files"
-	"github.com/swaggo/gin-swagger"
+	ginSwagger "github.com/protsack-stephan/gin-swagger"
+	swaggerFiles "github.com/swaggo/files"
 
-	"github.com/swaggo/gin-swagger/example/basic/api"
+	"github.com/protsack-stephan/gin-swagger/example/basic/api"
 
-	_ "github.com/swaggo/gin-swagger/example/basic/docs"
+	_ "github.com/protsack-stephan/gin-swagger/example/basic/docs"
 )
 
 // @title Swagger Example API

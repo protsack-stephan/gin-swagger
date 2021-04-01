@@ -1,4 +1,4 @@
-module github.com/swaggo/gin-swagger
+module github.com/protsack-stephan/gin-swagger
 
 require (
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751

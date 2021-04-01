@@ -1,16 +1,17 @@
 package ginSwagger
 
 import (
-	"github.com/gin-contrib/gzip"
 	"net/http/httptest"
 	"os"
 	"testing"
 
-	"github.com/gin-gonic/gin"
-	"github.com/stretchr/testify/assert"
-	"github.com/swaggo/gin-swagger/swaggerFiles"
+	"github.com/gin-contrib/gzip"
 
-	_ "github.com/swaggo/gin-swagger/example/basic/docs"
+	"github.com/gin-gonic/gin"
+	"github.com/protsack-stephan/gin-swagger/swaggerFiles"
+	"github.com/stretchr/testify/assert"
+
+	_ "github.com/protsack-stephan/gin-swagger/example/basic/docs"
 )
 
 func TestWrapHandler(t *testing.T) {
